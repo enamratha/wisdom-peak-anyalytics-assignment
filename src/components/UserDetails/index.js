@@ -92,7 +92,7 @@ class UserDetails extends Component {
                 ? 'border-white bg-gradient-to-r from-transparent to-black'
                 : 'border-sky-700 bg-gradient-to-r from-cyan-500 to-cyan-50'
             } 
-            h-full w-100 md:w-4/5 flex flex-col 
+            min-h-lvh w-100 md:w-4/5 flex flex-col 
             md:flex-row md:justify-start p-5 md:p-10"`}
             >
               <div
@@ -112,8 +112,8 @@ class UserDetails extends Component {
                 <div className="w-8/12 my-3 px-3">
                   <h1 className="text-xl font-semibold">{name}</h1>
                   <div className="flex justify-between">
-                    <p>{username}</p>
-                    <p>{phone}</p>
+                    <p className='text-sm'>{username}</p>
+                    <p className='text-sm mx-1'>{phone}</p>
                   </div>
                   <p>{email}</p>
                   <hr />
@@ -176,7 +176,7 @@ class UserDetails extends Component {
           }
           return (
             <div
-              className={`h-screen ${isDarkTheme === true ? 'bg-black text-white' : 'bg-sky-50 text-emerald-950'}`}
+              className={`min-h-lvh ${isDarkTheme === true ? 'bg-black text-white' : 'bg-sky-50 text-emerald-950'}`}
             >
               <nav className="flex justify-between p-2 px-4">
                 <h1
@@ -196,7 +196,7 @@ class UserDetails extends Component {
                 </button>
               </nav>
               <div
-                className={`p-5 h-full flex flex-col 
+                className={`p-5 min-h-lvh flex flex-col 
                 ${
                   isDarkTheme === true
                     ? "bg-[url('https://res.cloudinary.com/dzhzfdugz/image/upload/v1737357065/WhatsApp_Image_2025-01-20_at_12.40.43_svbome.jpg')]"

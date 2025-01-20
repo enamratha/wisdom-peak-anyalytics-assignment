@@ -156,9 +156,9 @@ class Home extends Component {
           }
           return (
             <div
-              className={`min-h-lvh ${isDarkTheme === true ? 'bg-slate-900' : 'bg-sky-50'}`}
+              className={`w-full min-h-lvh ${isDarkTheme === true ? 'bg-slate-900' : 'bg-sky-50'}`}
             >
-              <nav className="flex flex-col md:flex-row items-center justify-between px-5">
+              <nav className="flex flex-col md:flex-row items-center justify-between px-2 w-full">
                 <h1
                   className={`${
                     isDarkTheme === true ? 'text-white' : 'text-sky-700'
