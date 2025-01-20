@@ -167,7 +167,7 @@ class Home extends Component {
                 >
                   Users
                 </h1>
-                <div className="flex justify-self-end items-center">
+                <div className="flex flex-col md:flex-row justify-self-end items-center">
                   <input
                     value={searchInput}
                     onChange={this.onChangeSearchInput}
@@ -180,6 +180,7 @@ class Home extends Component {
                       }`}
                     placeholder="search here"
                   />
+                  <div className='flex items-center'>
                   <button
                     className={`border-2 m-3 px-2 rounded-md ${
                       isDarkTheme === true
@@ -207,6 +208,7 @@ class Home extends Component {
                       <MdDarkMode className="text-sky-700 text-3xl" />
                     )}
                   </button>
+                  </div>
                 </div>
               </nav>
               {this.renderResults()}
